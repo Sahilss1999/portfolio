@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sahil Shetye — Python Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="#hero" class="logo">sahil<span class="dot">.</span>dev</a>
+    <ul class="nav-links">
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button id="navToggle" class="nav-toggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ===================== HERO ===================== -->
+<header class="hero" id="hero">
+  <div class="hero-inner">
+    <div class="hero-text">
+      <p class="eyebrow">// available for fresher roles</p>
+      <h1>Sahil Shetye</h1>
+      <p class="hero-role">Python Developer</p>
+      <p class="hero-sub">I build backend systems, REST APIs and data-driven apps — with clean structure and a bias for shipping working things.</p>
+      <div class="hero-actions">
+        <a href="resume.pdf" class="btn btn-primary" download>Download Résumé</a>
+        <a href="https://github.com/Sahilss1999" target="_blank" rel="noopener" class="btn btn-ghost">GitHub</a>
+      </div>
+    </div>
+
+    <div class="terminal" aria-hidden="false">
+      <div class="terminal-bar">
+        <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+        <span class="terminal-title">sahil@portfolio: ~</span>
+      </div>
+      <div class="terminal-body">
+        <pre id="terminalText"></pre>
+        <span class="cursor" id="cursor">▌</span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ===================== PROJECTS ===================== -->
+<section class="section" id="projects">
+  <p class="section-label">// projects</p>
+  <h2 class="section-title">Things I've shipped</h2>
+
+  <div class="project-grid">
+
+    <article class="project-card featured">
+      <div class="project-head">
+        <span class="file-tag">api</span>
+        <h3>Mini Notification Service</h3>
+      </div>
+      <p>A backend service with JWT-based authentication, SQLAlchemy ORM and SQLite — deployed end to end with a live frontend and backend.</p>
+      <div class="tech-row">
+        <span class="tag">FastAPI</span><span class="tag">JWT</span><span class="tag">SQLAlchemy</span><span class="tag">SQLite</span>
+      </div>
+      <div class="project-links">
+        <a href="https://github.com/Sahilss1999" target="_blank" rel="noopener">GitHub →</a>
+        <a href="#" target="_blank" rel="noopener">Live demo →</a>
+      </div>
+    </article>
+
+    <article class="project-card featured">
+      <div class="project-head">
+        <span class="file-tag">data</span>
+        <h3>IPL Data Analysis Dashboard</h3>
+      </div>
+      <p>An interactive dashboard analysing IPL match data — team performance, player stats and season trends, explored with Pandas.</p>
+      <div class="tech-row">
+        <span class="tag">Python</span><span class="tag">Pandas</span><span class="tag">Streamlit</span>
+      </div>
+      <div class="project-links">
+        <a href="https://github.com/Sahilss1999" target="_blank" rel="noopener">GitHub →</a>
+        <a href="#" target="_blank" rel="noopener">Live demo →</a>
+      </div>
+    </article>
+
+    <article class="project-card">
+      <div class="project-head">
+        <span class="file-tag">app</span>
+        <h3>Password Manager</h3>
+      </div>
+      <p>A desktop app to securely store and manage passwords, with local file handling for data persistence.</p>
+      <div class="tech-row">
+        <span class="tag">Python</span><span class="tag">Tkinter</span><span class="tag">File Handling</span>
+      </div>
+      <div class="project-links">
+        <a href="https://github.com/Sahilss1999" target="_blank" rel="noopener">GitHub →</a>
+      </div>
+    </article>
+
+    <article class="project-card">
+      <div class="project-head">
+        <span class="file-tag">app</span>
+        <h3>Pomodoro Timer</h3>
+      </div>
+      <p>A focus-tracking productivity timer implementing the Pomodoro technique, built with Tkinter.</p>
+      <div class="tech-row">
+        <span class="tag">Python</span><span class="tag">Tkinter</span>
+      </div>
+      <div class="project-links">
+        <a href="https://github.com/Sahilss1999" target="_blank" rel="noopener">GitHub →</a>
+      </div>
+    </article>
+
+    <article class="project-card">
+      <div class="project-head">
+        <span class="file-tag">game</span>
+        <h3>Pong &amp; Snake</h3>
+      </div>
+      <p>Classic arcade games rebuilt from scratch, written to practice OOP design and game-loop logic.</p>
+      <div class="tech-row">
+        <span class="tag">Python</span><span class="tag">OOP</span>
+      </div>
+      <div class="project-links">
+        <a href="https://github.com/Sahilss1999" target="_blank" rel="noopener">GitHub →</a>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- ===================== SKILLS ===================== -->
+<section class="section alt" id="skills">
+  <p class="section-label">// skills</p>
+  <h2 class="section-title">What I work with</h2>
+
+  <div class="skills-grid">
+    <div class="skill-group">
+      <h4>Languages</h4>
+      <div class="tech-row">
+        <span class="tag">Python</span><span class="tag">JavaScript</span><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">SQL</span>
+      </div>
+    </div>
+    <div class="skill-group">
+      <h4>Backend</h4>
+      <div class="tech-row">
+        <span class="tag">FastAPI</span><span class="tag">Flask</span><span class="tag">JWT Auth</span><span class="tag">SQLAlchemy</span>
+      </div>
+    </div>
+    <div class="skill-group">
+      <h4>Frontend</h4>
+      <div class="tech-row">
+        <span class="tag">HTML5</span><span class="tag">CSS3</span><span class="tag">Bootstrap</span>
+      </div>
+    </div>
+    <div class="skill-group">
+      <h4>Data &amp; Tools</h4>
+      <div class="tech-row">
+        <span class="tag">Pandas</span><span class="tag">Git / GitHub</span><span class="tag">Tkinter</span><span class="tag">SQLite</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== ABOUT ===================== -->
+<section class="section" id="about">
+  <p class="section-label">// about</p>
+  <h2 class="section-title">A bit about me</h2>
+
+  <div class="about-grid">
+    <div class="about-card">
+      <span class="big-initial">SS</span>
+    </div>
+    <div class="about-text">
+      <p>I'm a BE Computer Engineering graduate from Shivajirao Jondhale College of Engineering, Dombivli. I'm interested in backend development — building APIs, authentication systems and database-driven applications that actually run in production, not just on paper.</p>
+      <p>Right now I'm working hands-on with FastAPI, Flask and SQL, and pushing myself to ship deployed, end-to-end projects instead of stopping at "it runs on my machine."</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CONTACT ===================== -->
+<section class="section alt" id="contact">
+  <p class="section-label">// contact</p>
+  <h2 class="section-title">Let's work together</h2>
+  <p class="contact-sub">Open to Python Developer / Backend internship and fresher roles. Reach out — I reply fast.</p>
+
+  <div class="contact-row">
+    <a href="mailto:shetyesahil1999@gmail.com" class="contact-link">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+      Email
+    </a>
+    <a href="https://www.linkedin.com/in/sahil-shetye-741540389" target="_blank" rel="noopener" class="contact-link">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="8" y1="11" x2="8" y2="16"/><line x1="8" y1="8" x2="8" y2="8"/><path d="M12 16v-3a2 2 0 0 1 4 0v3"/></svg>
+      LinkedIn
+    </a>
+    <a href="https://github.com/Sahilss1999" target="_blank" rel="noopener" class="contact-link">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.1 1.3a11 11 0 0 0-5.6 0C7.9 2.8 6.8 3.1 6.8 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 5.4 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/></svg>
+      GitHub
+    </a>
+  </div>
+</section>
+
+<footer class="footer">
+  <p>Designed &amp; built by Sahil Shetye · <span id="year"></span></p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
