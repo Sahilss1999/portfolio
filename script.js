@@ -62,13 +62,23 @@ if (navToggle) {
 // ===== Footer year =====
 document.getElementById("year").textContent = new Date().getFullYear();
 
+// ===== Resume: modal on desktop, new tab on mobile =====
 const resumeBtn = document.getElementById('resumeBtn');
 const resumeModal = document.getElementById('resumeModal');
 const resumeClose = document.getElementById('resumeClose');
 
+const isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+
 resumeBtn.addEventListener('click', (e) => {
   e.preventDefault();
-  resumeModal.classList.remove('hidden');
+
+  if (isMobile) {
+    // Mobile browsers often can't render PDFs inside an iframe,
+    // so open directly in a new tab instead.
+    window.open('resume.pdf', '_blank');
+  } else {
+    resumeModal.classList.remove('hidden');
+  }
 });
 
 resumeClose.addEventListener('click', () => {
