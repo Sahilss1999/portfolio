@@ -61,3 +61,20 @@ if (navToggle) {
 
 // ===== Footer year =====
 document.getElementById("year").textContent = new Date().getFullYear();
+
+const resumeBtn = document.getElementById('resumeBtn');
+const resumeModal = document.getElementById('resumeModal');
+const resumeClose = document.getElementById('resumeClose');
+
+resumeBtn.addEventListener('click', (e) => {
+  e.preventDefault();
+  resumeModal.classList.remove('hidden');
+});
+
+resumeClose.addEventListener('click', () => {
+  resumeModal.classList.add('hidden');
+});
+
+resumeModal.addEventListener('click', (e) => {
+  if (e.target === resumeModal) resumeModal.classList.add('hidden');
+});

@@ -38,8 +38,8 @@
       <p class="hero-role">Python Developer</p>
       <p class="hero-sub">I build backend systems, REST APIs and data-driven apps — with clean structure and a bias for shipping working things.</p>
       <div class="hero-actions">
-        <a href="resume.pdf" class="btn btn-primary" download>Download Résumé</a>
-        <a href="https://github.com/Sahilss1999" target="_blank" rel="noopener" class="btn btn-ghost">GitHub</a>
+          <a href="#" class="btn btn-primary" id="resumeBtn">Download Résumé</a>
+          <a href="https://github.com/Sahilss1999" target="_blank" rel="noopener" class="btn btn-ghost">GitHub</a>
       </div>
     </div>
 
@@ -212,6 +212,20 @@
 <footer class="footer">
   <p>Designed &amp; built by Sahil Shetye · <span id="year"></span></p>
 </footer>
+
+<!-- ===================== RESUME MODAL ===================== -->
+<div class="resume-modal hidden" id="resumeModal">
+  <div class="resume-modal-content">
+    <div class="resume-modal-head">
+      <span>resume.pdf</span>
+      <button id="resumeClose" aria-label="Close">✕</button>
+    </div>
+    <iframe src="resume.pdf" class="resume-frame"></iframe>
+    <div class="resume-modal-foot">
+      <a href="resume.pdf" download class="btn btn-primary">Download</a>
+    </div>
+  </div>
+</div>
 
 <script src="script.js"></script>
 </body>
